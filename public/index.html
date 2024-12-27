@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC Control System - Steamlit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Air Conditioning Control System</h1>
+        
+        <div class="dashboard">
+            <div class="sidebar">
+                <h2>Settings</h2>
+                <div class="control-panel">
+                    <label>Target Temperature (°C)</label>
+                    <input type="range" id="tempSlider" min="18" max="30" value="24">
+                    <span id="tempValue">24°C</span>
+
+                    <label>Power Mode</label>
+                    <select id="powerMode">
+                        <option value="Auto">Auto</option>
+                        <option value="On">On</option>
+                        <option value="Off">Off</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="weather-panel">
+                    <h2>Current Conditions</h2>
+                    <div class="metrics">
+                        <div class="metric">
+                            <h3>Temperature</h3>
+                            <p id="currentTemp">--°C</p>
+                        </div>
+                        <div class="metric">
+                            <h3>Humidity</h3>
+                            <p id="currentHumidity">--%</p>
+                        </div>
+                        <div class="metric">
+                            <h3>Feels Like</h3>
+                            <p id="feelsLike">--°C</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="status-panel">
+                    <h2>AC Status</h2>
+                    <p id="acStatus">Status: --</p>
+                    <p id="powerConsumption">Power Consumption: -- W</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
