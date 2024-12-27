@@ -15,14 +15,14 @@
                 <h2>Settings</h2>
                 <div class="control-panel">
                     <label>Target Temperature (°C)</label>
-                    <input type="range" id="tempSlider" min="18" max="30" value="24">
+                    <input type="range" id="tempSlider" min="16" max="30" value="24">
                     <span id="tempValue">24°C</span>
 
                     <label>Power Mode</label>
                     <select id="powerMode">
-                        <option value="Auto">Auto</option>
-                        <option value="On">On</option>
-                        <option value="Off">Off</option>
+                        <option value="auto">Auto</option>
+                        <option value="eco">Eco</option>
+                        <option value="turbo">Turbo</option>
                     </select>
                 </div>
             </div>
@@ -49,7 +49,7 @@
                 <div class="status-panel">
                     <h2>AC Status</h2>
                     <p id="acStatus">Status: --</p>
-                    <p id="powerConsumption">Power Consumption: -- W</p>
+                    <p id="powerConsumption">Power Consumption: --W</p>
                 </div>
             </div>
         </div>
